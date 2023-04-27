@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- monaca -->
+    <meta charset="utf-8">
+     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <!-- /monaca -->
+    <link rel="stylesheet" href="../../destyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <!-- colorpicker -->
+    <script src="md-color-picker.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Abel&family=Aclonica&family=Acme&family=Actor&family=Adamina&family=Akronim&family=Alata&family=Aldrich&family=Alef&family=Alegreya&family=Aleo&family=Alice&family=Allura&family=Almarai&family=Almendra&family=Amiri&family=Anton&family=Arapey&family=Archivo&family=Arimo&family=Arizonia&family=Arsenal&family=Asap&family=Atma&family=Audiowide&family=Bangers&family=Barlow&family=Baskervville&family=BenchNine&family=Bitter&family=Bonbon&family=Boogaloo&family=Bungee&family=Cabin&family=Cairo&family=Calistoga&family=Calligraffitti&family=Cantarell&family=Cardo&family=Catamaran&family=Caveat&family=Changa&family=Chango&family=Chewy&family=Cinzel&family=Coda&family=Codystar&family=Comfortaa&family=Comforter&family=Cookie&family=Corinthia&family=Cormorant&family=Courgette&family=Creepster&family=Cuprum&family=Damion&family=Dokdo&family=Domine&family=Dosis&family=DotGothic16&family=Eater&family=Economica&family=Eczar&family=Electrolize&family=Exo&family=Faustina&family=Festive&family=Flavors&family=Forum&family=Gaegu&family=Gelasio&family=Genos&family=Geo&family=Griffy&family=Gruppo&family=Gudea&family=Gwendolyn&family=Handlee&family=Harmattan&family=Hurricane&family=Iceland&family=Inspiration&family=Italianno&family=Itim&family=Jua&family=Jura&family=Kalam&family=Kanit&family=Karla&family=Karma&family=Khand&family=Kings&family=Knewave&family=Kranky&family=Kristi&family=Krub&family=Laila&family=Lato:wght@300;400;900&family=Lemon&family=Lexend&family=Licorice&family=Lobster&family=Lora&family=Lusitana&family=Mali&family=Manrope&family=Marcellus&family=Martel&family=Marvel&family=MedievalSharp&family=Merienda&family=Michroma&family=Mitr&family=Modak&family=Mohave&family=Monda&family=Monofett&family=Monoton&family=MonteCarlo&family=Montserrat&family=MuseoModerno&family=Neucha&family=Neuton&family=Niconne&family=Niramit&family=Notable&family=Nunito&family=Ole&family=Oranienbaum&family=Orbitron&family=Oswald&family=Oxygen&family=Pacifico&family=Pangolin&family=Parisienne&family=Petemoss&family=Philosopher&family=Piazzolla&family=Plaster&family=Play&family=Playball&family=Poppins&family=Praise&family=Prata&family=Quantico&family=Quattrocento&family=Questrial&family=Quicksand&family=Rajdhani&family=Ranchers&family=Rancho&family=Rasa&family=Rationale&family=Recursive&family=Ribeye&family=Righteous&family=Roboto:ital@1&family=Rokkitt&family=Rubik&family=Ruda&family=Rye&family=Sacramento&family=Saira&family=Sanchez&family=Sancreek&family=Sarabun&family=Sarina&family=Satisfy&family=Sen&family=Shalimar&family=Shojumaru&family=Shrikhand&family=Signika&family=Slackey&family=Smooch&family=Sora&family=Spartan&family=Spectral&family=Sriracha&family=Staatliches&family=Stalemate&family=Stick&family=Syncopate&family=Tajawal&family=Tangerine&family=Taviraj&family=Teko&family=Tinos&family=Tourney&family=Ultra&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&family=Unna&family=VT323&family=Vidaloka&family=Viga&family=Vollkorn&family=Voltaire&family=Wallpoet&family=Waterfall&family=Yantramanav&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="center column" id="body">
+  <img src="../../images/close-min.png" class="close" id="close">
+  <div class="preview-n-color">
+      <div class="preview center background" id="preview"><p class="clock" id="clock">12:34</p></div>
+      <div class="back-color-box center"><div class="back-color colorpicker background" id="back-color-palette"></div></div>
+      <div class="clock-color-box center"><div class="clock-color colorpicker" id="clock-color-palette"></div></div>
+      <div class="default-color-box center"><div class="default-color colorpicker" id="default-color-palette"></div></div>
+  </div>
+  <div class="wrap fonts-box">
+    <div class="fonts" id="Roboto"></div>
+    <div class="fonts" id="Montserrat"></div>
+    <div class="fonts" id="Poppins"></div>
+    <div class="fonts" id="Oswald"></div>
+    <div class="fonts" id="Corinthia"></div>
+    <div class="fonts" id="Nunito"></div>
+    <div class="fonts" id="Rubik"></div>
+    <div class="fonts" id="Shalimar"></div>
+    <div class="fonts" id="Lora"></div>
+    <div class="fonts" id="Quicksand"></div>
+    <div class="fonts" id="Karla"></div>
+    <div class="fonts" id="Barlow"></div>
+    <div class="fonts" id="Oxygen"></div>
+    <div class="fonts" id="Arimo"></div>
+    <div class="fonts" id="Dosis"></div>
+    <div class="fonts" id="Lobster"></div>
+    <div class="fonts" id="Cabin"></div>
+    <div class="fonts" id="Bitter"></div>
+    <div class="fonts" id="Anton"></div>
+    <div class="fonts" id="Mohave"></div>
+    <div class="fonts" id="Cairo"></div>
+    <div class="fonts" id="Abel"></div>
+    <div class="fonts" id="Kanit"></div>
+    <div class="fonts" id="Smooch"></div>
+    <div class="fonts" id="Comfortaa"></div>
+    <div class="fonts" id="Pacifico"></div>
+    <div class="fonts" id="Teko"></div>
+    <div class="fonts" id="Ole"></div>
+    <div class="fonts" id="Asap"></div>
+    <div class="fonts" id="Rajdhani"></div>
+    <div class="fonts" id="Questrial"></div>
+    <div class="fonts" id="Caveat"></div>
+    <div class="fonts" id="Catamaran"></div>
+    <div class="fonts" id="Manrope"></div>
+    <div class="fonts" id="Inspiration"></div>
+    <div class="fonts" id="Exo"></div>
+    <div class="fonts" id="Tajawal"></div>
+    <div class="fonts" id="Archivo"></div>
+    <div class="fonts" id="Gwendolyn"></div>
+    <div class="fonts" id="Domine"></div>
+    <div class="fonts" id="Satisfy"></div>
+    <div class="fonts" id="Play"></div>
+    <div class="fonts" id="Acme"></div>
+    <div class="fonts" id="ABeeZee"></div>
+    <div class="fonts" id="Spartan"></div>
+    <div class="fonts" id="Signika"></div>
+    <div class="fonts" id="Staatliches"></div>
+    <div class="fonts" id="Waterfall"></div>
+    <div class="fonts" id="Licorice"></div>
+    <div class="fonts" id="Righteous"></div>
+    <div class="fonts" id="Sarabun"></div>
+    <div class="fonts" id="Vollkorn"></div>
+    <div class="fonts" id="Cinzel"></div>
+    <div class="fonts" id="Eczar"></div>
+    <div class="fonts" id="Martel"></div>
+    <div class="fonts" id="Cookie"></div>
+    <div class="fonts" id="Yantramanav"></div>
+    <div class="fonts" id="Amiri"></div>
+    <div class="fonts" id="Courgette"></div>
+    <div class="fonts" id="Almarai"></div>
+    <div class="fonts" id="Tinos"></div>
+    <div class="fonts" id="Alegreya"></div>
+    <div class="fonts" id="Prata"></div>
+    <div class="fonts" id="Spectral"></div>
+    <div class="fonts" id="Cardo"></div>
+    <div class="fonts" id="Parisienne"></div>
+    <div class="fonts" id="Kalam"></div>
+    <div class="fonts" id="Changa"></div>
+    <div class="fonts" id="Sacramento"></div>
+    <div class="fonts" id="Rokkitt"></div>
+    <div class="fonts" id="Cantarell"></div>
+    <div class="fonts" id="Orbitron"></div>
+    <div class="fonts" id="Cormorant"></div>
+    <div class="fonts" id="Cuprum"></div>
+    <div class="fonts" id="Saira"></div>
+    <div class="fonts" id="Handlee"></div>
+    <div class="fonts" id="Khand"></div>
+    <div class="fonts" id="Genos"></div>
+    <div class="fonts" id="Faustina"></div>
+    <div class="fonts" id="Itim"></div>
+    <div class="fonts" id="Unna"></div>
+    <div class="fonts" id="Gelasio"></div>
+    <div class="fonts" id="Philosopher"></div>
+    <div class="fonts" id="Quattrocento"></div>
+    <div class="fonts" id="Syncopate"></div>
+    <div class="fonts" id="Sanchez"></div>
+    <div class="fonts" id="Mitr"></div>
+    <div class="fonts" id="Alata"></div>
+    <div class="fonts" id="Vidaloka"></div>
+    <div class="fonts" id="Monda"></div>
+    <div class="fonts" id="Bungee"></div>
+    <div class="fonts" id="Neuton"></div>
+    <div class="fonts" id="Playball"></div>
+    <div class="fonts" id="Viga"></div>
+    <div class="fonts" id="Ultra"></div>
+    <div class="fonts" id="Yellowtail"></div>
+    <div class="fonts" id="Taviraj"></div>
+    <div class="fonts" id="Marcellus"></div>
+    <div class="fonts" id="Karma"></div>
+    <div class="fonts" id="Tangerine"></div>
+    <div class="fonts" id="Creepster"></div>
+    <div class="fonts" id="Bangers"></div>
+    <div class="fonts" id="Sora"></div>
+    <div class="fonts" id="Aleo"></div>
+    <div class="fonts" id="Lusitana"></div>
+    <div class="fonts" id="Alice"></div>
+    <div class="fonts" id="Actor"></div>
+    <div class="fonts" id="Arapey"></div>
+    <div class="fonts" id="Mali"></div>
+    <div class="fonts" id="Kings"></div>
+    <div class="fonts" id="Neucha"></div>
+    <div class="fonts" id="Gudea"></div>
+    <div class="fonts" id="Merienda"></div>
+    <div class="fonts" id="Ruda"></div>
+    <div class="fonts" id="Adamina"></div>
+    <div class="fonts" id="Piazzolla"></div>
+    <div class="fonts" id="Jura"></div>
+    <div class="fonts" id="Allura"></div>
+    <div class="fonts" id="Recursive"></div>
+    <div class="fonts" id="BenchNine"></div>
+    <div class="fonts" id="Economica"></div>
+    <div class="fonts" id="Alef"></div>
+    <div class="fonts" id="MonteCarlo"></div>
+    <div class="fonts" id="Sen"></div>
+    <div class="fonts" id="Monoton"></div>
+    <div class="fonts" id="Praise"></div>
+    <div class="fonts" id="Audiowide"></div>
+    <div class="fonts" id="Gruppo"></div>
+    <div class="fonts" id="Aclonica"></div>
+    <div class="fonts" id="Pangolin"></div>
+    <div class="fonts" id="Electrolize"></div>
+    <div class="fonts" id="Petemoss"></div>
+    <div class="fonts" id="Hurricane"></div>
+    <div class="fonts" id="Arsenal"></div>
+    <div class="fonts" id="Sriracha"></div>
+    <div class="fonts" id="Damion"></div>
+    <div class="fonts" id="Forum"></div>
+    <div class="fonts" id="Coda"></div>
+    <div class="fonts" id="Quantico"></div>
+    <div class="fonts" id="Krub"></div>
+    <div class="fonts" id="Italianno"></div>
+    <div class="fonts" id="Michroma"></div>
+    <div class="fonts" id="Laila"></div>
+    <div class="fonts" id="Comforter"></div>
+    <div class="fonts" id="Boogaloo"></div>
+    <div class="fonts" id="Rasa"></div>
+    <div class="fonts" id="Lexend"></div>
+    <div class="fonts" id="Niramit"></div>
+    <div class="fonts" id="Arizonia"></div>
+    <div class="fonts" id="Festive"></div>
+    <div class="fonts" id="Chewy"></div>
+    <div class="fonts" id="Rancho"></div>
+    <div class="fonts" id="Voltaire"></div>
+    <div class="fonts" id="Shrikhand"></div>
+    <div class="fonts" id="Harmattan"></div>
+    <div class="fonts" id="VT323"></div>
+    <div class="fonts" id="Aldrich"></div>
+    <div class="fonts" id="Knewave"></div>
+    <div class="fonts" id="Niconne"></div>
+    <div class="fonts" id="Baskervville"></div>
+    <div class="fonts" id="Kristi"></div>
+    <div class="fonts" id="Rye"></div>
+    <div class="fonts" id="Jua"></div>
+    <div class="fonts" id="Oranienbaum"></div>
+    <div class="fonts" id="Calligraffitti"></div>
+    <div class="fonts" id="Wallpoet"></div>
+    <div class="fonts" id="Marvel"></div>
+    <div class="fonts" id="Calistoga"></div>
+    <div class="fonts" id="Lemon"></div>
+    <div class="fonts" id="UnifrakturMaguntia"></div>
+    <div class="fonts" id="Ranchers"></div>
+    <div class="fonts" id="Dokdo"></div>
+    <div class="fonts" id="Atma"></div>
+    <div class="fonts" id="Geo"></div>
+    <div class="fonts" id="Codystar"></div>
+    <div class="fonts" id="Notable"></div>
+    <div class="fonts" id="Shojumaru"></div>
+    <div class="fonts" id="Eater"></div>
+    <div class="fonts" id="Stalemate"></div>
+    <div class="fonts" id="Iceland"></div>
+    <div class="fonts" id="UnifrakturCook"></div>
+    <div class="fonts" id="Slackey"></div>
+    <div class="fonts" id="MuseoModerno"></div>
+    <div class="fonts" id="Chango"></div>
+    <div class="fonts" id="Sarina"></div>
+    <div class="fonts" id="Almendra"></div>
+    <div class="fonts" id="Modak"></div>
+    <div class="fonts" id="Kranky"></div>
+    <div class="fonts" id="MedievalSharp"></div>
+    <div class="fonts" id="Tourney"></div>
+    <div class="fonts" id="DotGothic16"></div>
+    <div class="fonts" id="Ribeye"></div>
+    <div class="fonts" id="Rationale"></div>
+    <div class="fonts" id="Akronim"></div>
+    <div class="fonts" id="Sancreek"></div>
+    <div class="fonts" id="Griffy"></div>
+    <div class="fonts" id="Monofett"></div>
+    <div class="fonts" id="Stick"></div>
+    <div class="fonts" id="Gaegu"></div>
+    <div class="fonts" id="Flavors"></div>
+    <div class="fonts" id="Bonbon"></div>
+  </div>
+  <div class="bcp-table table" id="bcp-table">
+      <div class="w-h-100per relative center">
+          <img src="../../images/arrow-min.png" class="slide-out">
+          <md-color-picker id="bg-picker" color-margin="6" colors-per-row="5" color-size="50" default-tint="500" fixedMinHeight="true" palette="material-full" use-spectrum-picker="true" value="#434848"></md-color-picker>
+      </div>
+  </div>
+  <div class="ccp-table table" id="ccp-table">
+      <div class="w-h-100per relative center">
+        <img src="../../images/arrow-min.png" class="slide-out">
+
+        <md-color-picker id="clock-picker" color-margin="6" colors-per-row="5" color-size="50" default-tint="500" fixedMinHeight="true" palette="material-full" use-spectrum-picker="true" value="#434848"></md-color-picker>
+      </div>
+  </div>
+</div>
+</body>
+</html>
+
